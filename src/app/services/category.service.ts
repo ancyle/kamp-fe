@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class CategoryService {
-  apiUrl: string = 'https://localhost:5001/api/Categories/getall';
+  apiUrl: string = 'https://localhost:44309/api/Categories/getall';
   constructor(private httpClient: HttpClient) {}
 
   getCategories(): Observable<ListResponseModel<Category>> {
